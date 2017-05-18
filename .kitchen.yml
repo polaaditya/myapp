@@ -19,8 +19,11 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[myapp::default]
+      - recipe[java]
+      #- recipe[tomcat8]
     verifier:
       inspec_tests:
         - test/recipes
-    attributes:
+    #attributes:
+      #tomcat8:
+        #autostart: false
