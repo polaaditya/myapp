@@ -19,7 +19,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[java]
+      - recipe[myapp]
       #- recipe[tomcat8]
     verifier:
       inspec_tests:
