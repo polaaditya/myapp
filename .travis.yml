@@ -8,4 +8,5 @@ dist: trusty
 #- bundle exec rake builddoc
 
 script:
-- berks install
+#- berks install
+- chef exec bundle exec rake
