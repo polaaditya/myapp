@@ -3,6 +3,9 @@ language: ruby
 sudo: enabled
 dist: trusty
 
+#script:
+#- bundle exec rake build
+#- bundle exec rake builddoc
+
 script:
-- bundle exec rake build
-- bundle exec rake builddoc
+- berks install
